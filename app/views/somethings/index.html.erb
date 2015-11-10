@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Somethings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lat</th>
+      <th>Long</th>
+      <th>Radius</th>
+      <th>Rating</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @somethings.each do |something| %>
+      <tr>
+        <td><%= something.lat %></td>
+        <td><%= something.long %></td>
+        <td><%= something.radius %></td>
+        <td><%= something.rating %></td>
+        <td><%= link_to 'Show', something %></td>
+        <td><%= link_to 'Edit', edit_something_path(something) %></td>
+        <td><%= link_to 'Destroy', something, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Something', new_something_path %>
