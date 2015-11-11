@@ -11,14 +11,9 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :lat %><br>
-    <%= f.text_field :lat %>
-  </div>
-  <div class="field">
-    <%= f.label :long %><br>
-    <%= f.text_field :long %>
-  </div>
+ <%=f.hidden_field :long%>
+ <%=f.hidden_field :lat %>
+
   <div class="field">
     <%= f.label :radius %><br>
     <%= f.text_field :radius %>
