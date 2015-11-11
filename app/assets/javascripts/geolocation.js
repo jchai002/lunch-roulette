@@ -10,8 +10,12 @@ function getLocation() {
 function setPosition(position) {
     lat.val(position.coords.latitude)
      lng.val(position.coords.longitude)
-    console.log(lng.val(),lat.val())
+     console.log(lng.val(),lat.val())
+    
 }
 
 getLocation()
+
+ 
+
 });
