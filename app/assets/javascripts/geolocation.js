@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	var lng = $("#something_long");
-	var lat = $("#something_lat");
+	var lng = $("#search_long");
+	var lat = $("#search_lat");
 	
 function getLocation() {
     if (navigator.geolocation) {
