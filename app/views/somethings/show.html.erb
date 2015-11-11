@@ -1,10 +1,6 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Business:</strong>
-  <%= @valid.name %>
-</p>
-
-
-<%= link_to 'Edit', edit_something_path(@something) %> |
-<%= link_to 'Back', somethings_path %>
+<div class="row main-block">
+  <div class="small-12 small-centered columns">
+    <h2><%= @valid.name %></h2>
+    <h3><%= @valid.location.display_address[0] %></h3>
+  </div>
+</div>
