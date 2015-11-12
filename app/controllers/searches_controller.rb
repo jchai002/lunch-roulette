@@ -15,13 +15,15 @@ include SearchesHelper
   end
 
     valid= valids.sample
-
+ 
     if valid.name
     @name = valid.name
     end
 
     if valid.location
     @address = valid.location.display_address[0]
+    @longitude = valid.location.coordinate.longitude
+    @latitude = valid.location.coordinate.latitude
     end
 
     if valid.image_url
