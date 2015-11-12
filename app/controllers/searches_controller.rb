@@ -1,13 +1,13 @@
 class SearchesController < ApplicationController
 before_action :set_search, only: [:show]
-
+include SearchesHelper
   # GET /searchs/1
   # GET /searchs/1.json
   def show
   @search = Search.find(params[:id])  
   coordinates = { latitude: @search.lat.to_f, longitude: @search.long.to_f }
   params = { term: 'restaurant',
-              radius_filter: @search.radius.to_i
+              radius_filter: mile_to_meter(@search.radius.to_i)
          }
   valids=[]
   Yelp.client.search_by_coordinates(coordinates,params).businesses.each do |b|
@@ -16,9 +16,18 @@ before_action :set_search, only: [:show]
 
     valid= valids.sample
 
+    if valid.name
     @name = valid.name
+    end
+
+    if valid.location
     @address = valid.location.display_address[0]
-    @image = valid.image_url.gsub!('ms.jpg','l.jpg') 
+    end
+
+    if valid.image_url
+    @image = valid.image_url.gsub!('ms.jpg','l.jpg')
+    end 
+
   end
 
   # GET /searchs/new
@@ -29,6 +38,10 @@ before_action :set_search, only: [:show]
   # POST /searchs
   # POST /searchs.json
   def create
+    Search.all.each do |e|
+      e.destroy
+    end
+
     @search = Search.new(search_params)
 
     respond_to do |format|

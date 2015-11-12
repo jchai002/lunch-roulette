@@ -23,7 +23,8 @@ function getLocation() {
 		var mapCenter = {lat: latitude, lng: longitude}
 	    var mapOptions = {
 	      zoom: 16,
-	      center: mapCenter
+	      center: mapCenter,
+	      scrollwheel: false
 	    }
 	    map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
