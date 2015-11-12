@@ -8,19 +8,21 @@ before_action :set_search, only: [:show]
   # GET /searchs/1
   # GET /searchs/1.json
   def show
-  @search = Search.find(params[:id])
-    
+  @search = Search.find(params[:id])  
   coordinates = { latitude: @search.lat.to_f, longitude: @search.long.to_f }
-  params = { term: 'food',
+  params = { term: 'restaurant',
               radius_filter: @search.radius.to_i
          }
   valids=[]
-
   Yelp.client.search_by_coordinates(coordinates,params).businesses.each do |b|
         valids<<b if b.rating>=@search.rating.to_f
   end
 
-    @valid= valids.sample
+    valid= valids.sample
+
+    @name = valid.name
+    @address = valid.location.display_address[0]
+    @image = valid.image_url.gsub!('ms.jpg','l.jpg') 
   end
 
   # GET /searchs/new

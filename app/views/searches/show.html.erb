@@ -1,7 +1,10 @@
 <div class="row main-block">
   <div class="small-12 small-centered columns">
-    <h2><%= @valid.name %></h2>
-    <h3><%= @valid.location.display_address[0] %></h3>
-    <%=link_to 're-roll', new_search_path, class: 'button' %>
+    <h2><%= @name %></h2>
+    <h3><%= @address %>
+    </h3>
+    <%= image_tag(@rating) %>
+    <%= image_tag(@image) %>
+    </h3>
   </div>
 </div>
