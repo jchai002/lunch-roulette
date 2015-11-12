@@ -5,6 +5,9 @@
     </h3>
     <%= image_tag(@rating) %>
     <%= image_tag(@image) %>
-    </h3>
+    <form>
+    <input type="hidden" id="business-long"value="<%=@longitude%>">
+    <input type="hidden" id="business-lat"value="<%=@latitude%>">
+    </form>
   </div>
 </div>
