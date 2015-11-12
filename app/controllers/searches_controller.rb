@@ -1,10 +1,6 @@
 class SearchesController < ApplicationController
 before_action :set_search, only: [:show]
 
-  def index
-    @searches = Search.all
-  end
-
   # GET /searchs/1
   # GET /searchs/1.json
   def show
@@ -28,10 +24,6 @@ before_action :set_search, only: [:show]
   # GET /searchs/new
   def new
     @search = Search.new
-  end
-
-  # GET /searchs/1/edit
-  def edit
   end
 
   # POST /searchs
