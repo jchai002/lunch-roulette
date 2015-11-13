@@ -34,9 +34,10 @@ function getLocation() {
 	    map: map
 	  });
 
+	  $('#new_search').show();
 	}
 	
-getLocation()
+getLocation();
 
  
 

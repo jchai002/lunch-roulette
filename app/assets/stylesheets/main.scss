@@ -1,8 +1,32 @@
 #new_search{
  padding-top:1em;
+ display: none;
 }
 
 #picture{
   width:400px;
   height:400px;
 }
+
+.title-bar {
+  background: #91d4d1;
+  color: #fff;
+  padding: 4em;
+  text-align: center;
+
+	  h1 {
+	  color: #fff;
+	  font-size: 5em;
+	  text-align: center;
+	}
+}
+
+.footer-bar {
+  background: #d2e5eb;
+  padding: 4em;
+
+	  h2, h3 {
+	  color: #222222;
+	}
+}
+
