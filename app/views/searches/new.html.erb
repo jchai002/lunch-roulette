@@ -1,4 +1,4 @@
-<div class="small-12 large-6 columns">
+<div class="small-12 columns">
 
 <%= form_for(@search) do |f| %>
   <% if @search.errors.any? %>
@@ -15,26 +15,28 @@
  <%=f.hidden_field :long%>
  <%=f.hidden_field :lat %>
 
-  <div class="field">
-    <%= f.label 'Max Distance From Me (miles)'%><br>
-    <%= f.text_field :radius %>
+  <div class="small-12 large-5 columns">
+    <%= f.text_field :radius, placeholder: 'Max Distance From Me (miles)'%>
   </div>
-  <div class="field">
-    <%= f.label 'Yelp Rating' %><br>
-    <%= f.text_field :rating %>
+  <div class="small-12 large-5 columns">
+    <%= f.text_field :rating, placeholder: 'Minimum Yelp Rating' %>
   </div>
-  <div class="actions">
+  <div class="large-2 columns hide-for-small">
     <%= f.submit "Let's Roll", class: 'small button' %>
   </div>
-  <%=image_tag('yelp.png')%>
+
+  <div class="show-for-small small-12 columns">
+    <%= f.submit "Let's Roll", class: 'expand button' %>
+  </div>
+
 <% end %>
 
+<div class="small-12 columns">
 <div id="result"></div>
-
+<div class="static-map" id="map"></div>
+</div>
 </div>
 
 
 
-<div class="small-12 large-6 columns">
-<div style="height:500px;width:100%" id="map"></div>
-</div>
+

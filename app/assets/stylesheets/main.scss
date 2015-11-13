@@ -1,12 +1,23 @@
+.content{
+	padding:2em;
+}
+
 #new_search{
- padding-top:1em;
  display: none;
 }
 
-#picture{
-  width:400px;
-  height:400px;
+#business-details{
+ padding:1em;
+ border: 1px solid #CCCCCC;
+ margin-bottom: 1em;
 }
+
+.pic {
+width: 200px; 
+height: 200px;
+overflow:hidden;
+}
+
 
 .title-bar {
   background: #91d4d1;
