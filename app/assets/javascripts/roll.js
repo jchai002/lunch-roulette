@@ -22,8 +22,6 @@ $(document).ready(function () {
     zoom: 16
   });
 
-  debugger
-
   directionsDisplay.setMap(directionMap);
 
   calculateAndDisplayRoute(directionsService, directionsDisplay, myLocation, bizLocation);
