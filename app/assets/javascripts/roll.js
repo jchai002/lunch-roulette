@@ -19,7 +19,8 @@ $(document).ready(function () {
   var directionMap = new google.maps.Map(document.getElementById('map'), {
     center: myLocation,
     scrollwheel: false,
-    zoom: 16
+    zoom: 16,
+    draggable:false
   });
 
   directionsDisplay.setMap(directionMap);

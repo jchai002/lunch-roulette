@@ -24,7 +24,8 @@ function getLocation() {
 	    var mapOptions = {
 	      zoom: 16,
 	      center: mapCenter,
-	      scrollwheel: false
+	      scrollwheel: false,
+	      draggable:false
 	    }
 	    map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
