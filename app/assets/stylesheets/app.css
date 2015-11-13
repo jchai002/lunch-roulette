@@ -1,13 +1,13 @@
 .title-bar {
-  background: #794C80;
+  background: #91d4d1;
   color: #fff;
   padding: 4em;
   text-align: center;
 }
 
 .footer-bar {
-  background: #93748A;
-  padding 8em;
+  background: #d2e5eb;
+  padding: 4em;
 }
 .footer-bar h2, .footer-bar h3 {
   color: #222222;
