@@ -1,3 +1,6 @@
+<div class="small-12 large-6 columns">
+
+<div id="result"></div>
 
 <%= form_for(@search) do |f| %>
   <% if @search.errors.any? %>
@@ -13,18 +16,22 @@
   <% end %>
  <%=f.hidden_field :long%>
  <%=f.hidden_field :lat %>
-<hr>
+
   <div class="field">
-    <%= f.label 'radius (miles)'%><br>
+    <%= f.label 'Max Distance From Me (miles)'%><br>
     <%= f.text_field :radius %>
   </div>
   <div class="field">
-    <%= f.label :rating %><br>
+    <%= f.label 'Yelp Rating' %><br>
     <%= f.text_field :rating %>
   </div>
   <div class="actions">
     <%= f.submit "Let's Roll", class: 'small button' %>
   </div>
+  <%=image_tag('yelp.png')%>
 <% end %>
-<div style="height:350px;width:100%" id="map"></div>
-<div id="result"></div>
+</div>
+
+<div class="small-12 large-6 columns">
+<div style="height:500px;width:100%" id="map"></div>
+</div>

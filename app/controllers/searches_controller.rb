@@ -19,9 +19,14 @@ include SearchesHelper
     if valid.name
     @name = valid.name
     end
+    
+    if valid.url
+      @url = valid.url
+    end
 
     if valid.location
     @address = valid.location.display_address[0]
+    @city = valid.location.display_address[1]
     @longitude = valid.location.coordinate.longitude
     @latitude = valid.location.coordinate.latitude
     end
