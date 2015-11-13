@@ -1,7 +1,5 @@
 <div class="small-12 large-6 columns">
 
-<div id="result"></div>
-
 <%= form_for(@search) do |f| %>
   <% if @search.errors.any? %>
     <div id="error_explanation">
@@ -30,7 +28,12 @@
   </div>
   <%=image_tag('yelp.png')%>
 <% end %>
+
+<div id="result"></div>
+
 </div>
+
+
 
 <div class="small-12 large-6 columns">
 <div style="height:500px;width:100%" id="map"></div>
