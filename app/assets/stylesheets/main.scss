@@ -11,7 +11,14 @@ body {
 	background-color: rgba(0,0,0,0);
 }
 
-.move-right .exit-off-canvas, .move-left .exit-off-canvas { box-shadow:none; }
+.move-right .exit-off-canvas, .move-left .exit-off-canvas {
+	box-shadow: none;
+	background: none;
+}
+
+.move-right .exit-off-canvas:hover, .move-left .exit-off-canvas {
+	background: none;
+}
 
 $topbar-bg-color: transparent;
 
