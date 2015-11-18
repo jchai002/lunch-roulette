@@ -1,6 +1,63 @@
+body {
+	background-image: url(table.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #1a0d00;
+}
+
+.left-off-canvas-menu {
+	background-color: rgba(0,0,0,0);
+}
+
+.move-right .exit-off-canvas, .move-left .exit-off-canvas { box-shadow:none; }
+
+$topbar-bg-color: transparent;
+
+.top-bar {
+	background-color: rgba(0,0,0,0);
+}
+
+.top-bar .name:hover {
+	background-color: rgba(222,163,103,0.2);
+}
+
+.top-bar-section li{
+	background-color: rgba(0,0,0,0) !important;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background-color: rgba(0,0,0,0);
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+	background-color: rgba(222,163,103,0.2);
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+	background-color: rgba(0,0,0,0);
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button):hover {
+	background-color: rgba(222,163,103,0.2);
+}
+
+#sliderOutput1, #sliderOutput2 {
+	background-color: rgba(222,163,103,0.8);
+}
+
 .content{
 	padding-top:2em;
 	padding-bottom:2em;
+}
+
+.button {
+	background-color: rgba(222,163,103,0.6);
+}
+
+.button:hover {
+	background-color: rgba(222,163,103,0.8);
 }
 
 #new_search{
@@ -18,27 +75,3 @@ width: 250px;
 height: 200px;
 overflow:hidden;
 }
-
-
-.title-bar {
-  background: #91d4d1;
-  color: #fff;
-  padding: 4em;
-  text-align: center;
-
-	  h1 {
-	  color: #fff;
-	  font-size: 5em;
-	  text-align: center;
-	}
-}
-
-.footer-bar {
-  background: #d2e5eb;
-  padding: 4em;
-
-	  h2, h3 {
-	  color: #222222;
-	}
-}
-

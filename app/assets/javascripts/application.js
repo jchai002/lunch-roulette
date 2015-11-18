@@ -17,3 +17,10 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+$(function() {
+	console.log("Hi!");
+});
+$(document).on('mouseover', '.range-slider', function() {
+	console.log("Hi!");
+	$(document).foundation('slider', 'reflow');
+});
