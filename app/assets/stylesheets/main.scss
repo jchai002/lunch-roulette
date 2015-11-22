@@ -15,6 +15,7 @@ body {
 
 .top-bar-section ul li > a {
 	color: rgb(252, 221, 191);
+	font-size: 1.2em;
 }
 
 .left-off-canvas-menu {
@@ -31,6 +32,14 @@ body {
 }
 
 $topbar-bg-color: transparent;
+
+aside {
+	padding-top: 3em;
+}
+
+aside a, aside p {
+	padding-left: 1em;
+}
 
 .top-bar {
 	background-color: rgba(0,0,0,0);
@@ -97,6 +106,34 @@ button:hover, button:focus, .button:hover, .button:focus {
 	color: rgb(252, 221, 191);
 	border-color: rgb(252, 221, 191);
 	outline: 0;
+}
+
+#input-box {
+	background-color: rgba(69, 45, 22, 0.3);
+	border-radius: 1em;
+	color: white;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+#input-box input[type=submit] {
+	margin-top: 2.3em;
+	margin-left: 0.5em;
+	border-radius: .5em;
+}
+
+#input-box input[type=text] {
+	border-color: rgba(222,163,103,0.8);
+	border-radius: .5em;
+	background-color: rgba(222,163,103,0.8);
+	color: rgb(252, 221, 191);
+	font-size: 1em;
+	margin-top: .2em;
+}
+
+#input-box h3 {
+	color: rgb(252, 221, 191);
+	font-size: 1.5em;
 }
 
 #new_search{
