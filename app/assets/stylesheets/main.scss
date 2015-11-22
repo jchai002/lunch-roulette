@@ -1,44 +1,158 @@
+body {
+	background-image: url(table.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #1a0d00;
+	color: rgb(252, 221, 191);
+}
+
+.top-bar .name h1 a {
+	color: rgb(252, 221, 191);
+	font-size: 2em;
+}
+
+.top-bar-section ul li > a {
+	color: rgb(252, 221, 191);
+	font-size: 1.2em;
+}
+
+.left-off-canvas-menu {
+	background-color: rgba(0,0,0,0);
+}
+
+.move-right .exit-off-canvas, .move-left .exit-off-canvas {
+	box-shadow: none;
+	background: none;
+}
+
+.move-right .exit-off-canvas:hover, .move-left .exit-off-canvas:hover {
+	background: none;
+}
+
+$topbar-bg-color: transparent;
+
+aside {
+	padding-top: 3em;
+}
+
+aside a, aside p {
+	padding-left: 1em;
+}
+
+.top-bar {
+	background-color: rgba(0,0,0,0);
+}
+
+.top-bar .name:hover {
+	background-color: rgba(222,163,103,0.2);
+}
+
+.top-bar-section li{
+	background-color: rgba(0,0,0,0) !important;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background-color: rgba(0,0,0,0);
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+	background-color: rgba(222,163,103,0.2);
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+	background-color: rgba(0,0,0,0);
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button):hover {
+	background-color: rgba(222,163,103,0.2);
+}
+
+#sliderOutput1, #sliderOutput2 {
+	background-color: rgba(222,163,103,0.8);
+}
+
+.range-slider.radius{
+	background: rgba(203, 147, 92, 0.8);
+	border: 1px solid rgba(203, 147, 92, 0.8);
+}
+
+.range-slider-active-segment {
+	background: rgba(203, 147, 92, 0.8);
+}
+
+.range-slider.radius .range-slider-handle {
+	background: rgb(252, 221, 191);
+}
+
+.range-slider.radius .range-slider-handle:hover {
+	background: rgb(252, 221, 191);
+}
+
 .content{
 	padding-top:2em;
 	padding-bottom:2em;
 }
 
+.button {
+	background-color: rgba(222,163,103,0.6);
+	color: rgb(252, 221, 191);
+	border-color: rgb(252, 221, 191);
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+	background-color: rgba(222,163,103,0.8);
+	color: rgb(252, 221, 191);
+	border-color: rgb(252, 221, 191);
+	outline: 0;
+}
+
+#input-box {
+	background-color: rgba(69, 45, 22, 0.3);
+	border-radius: 1em;
+	color: white;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+#input-box input[type=submit] {
+	margin-top: 2.3em;
+	margin-left: 0.5em;
+	border-radius: .5em;
+}
+
+#input-box input[type=text] {
+	border-color: rgba(222,163,103,0.8);
+	border-radius: .5em;
+	background-color: rgba(222,163,103,0.8);
+	color: rgb(252, 221, 191);
+	font-size: 1em;
+	margin-top: .2em;
+}
+
+#input-box h3 {
+	color: rgb(252, 221, 191);
+	font-size: 1.5em;
+}
+
 #new_search{
- display: none;
+	display: none;
 }
 
 #business-details{
- padding:1em;
- border: 1px solid #CCCCCC;
- margin-bottom: 1em;
+	background-color: rgba(222,163,103,0.8);
+	color: rgb(252, 221, 191);
+	padding:1em;
+	margin-bottom: 1em;
+}
+
+#business-details a {
+	color: rgb(252, 221, 191);
 }
 
 .pic {
-width: 250px; 
-height: 200px;
-overflow:hidden;
+	width: 250px; 
+	height: 200px;
+	overflow:hidden;
 }
-
-
-.title-bar {
-  background: #91d4d1;
-  color: #fff;
-  padding: 4em;
-  text-align: center;
-
-	  h1 {
-	  color: #fff;
-	  font-size: 5em;
-	  text-align: center;
-	}
-}
-
-.footer-bar {
-  background: #d2e5eb;
-  padding: 4em;
-
-	  h2, h3 {
-	  color: #222222;
-	}
-}
-
