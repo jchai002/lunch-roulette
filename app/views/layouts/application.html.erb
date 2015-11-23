@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "Lunch Roulette" %></title>
-    <%=favicon_link_tag(source='favicon.ico') %>
-    <%= stylesheet_link_tag    "application" %>
-    <%= javascript_include_tag "vendor/modernizr" %>
-    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
-  </head>
+<title><%= content_for?(:title) ? yield(:title) : "Lunch Roulette" %></title>
+<%=favicon_link_tag(source='favicon.ico') %>
+<%= stylesheet_link_tag    "application" %>
+<%= javascript_include_tag "vendor/modernizr" %>
+<%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+<%= csrf_meta_tags %>
+</head>
 
-  <body>
-    <div class="title-bar">
-      <div class="small-12 small-centered columns">
-        <h1>Lunch Roulette</h1>
-        <p>Let fate decide.</p>
-      </div>
-    </div>
+<body>
+<div class="off-canvas-wrap" data-offcanvas>
+	<div class="inner-wrap">
+		<nav class="top-bar" data-topbar role="navigation">
+			<ul class="title-area">
+				<li class="name">
+				<h1><a href="#">Lunch Roulette</a></h1>
+				</li>
+			</ul>
+			<section class="top-bar-section">
+				<ul class="right">
+					<li>
+						<a class="left-off-canvas-toggle" id="toggle-canvas" href="#">About</a>
+					</li>
+				</ul>
+			</section>
+		</nav>
 
-    <div class="content row">
-    <%= yield %>
-    </div>
+		<!-- off-canvas -->
+		<aside class="left-off-canvas-menu">
+			<p>Coded up by:</br>
+			Jerry Chai</br>
+			Dean Solecki</p>
+			</br>
+			<a href="https://github.com/jchai002/lunch-roulette">Check out on Github</a>
+		</aside>
 
-    <div class="footer-bar">
-      <div class="small-12 small-centered columns">
-        <h2>Lunch Roulette</h2>
-        <h4><a href="https://github.com/jchai002/lunch-roulette">Github</a></h4>
-      </div>
-    </div>
+		<!-- main content -->
+		<div class="content row">
+			<%= yield %>
+			<a class="exit-off-canvas"></a>
+		</div>
+	</div>
+</div>
 
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-  </body>
+</body>
 </html>

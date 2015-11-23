@@ -17,3 +17,7 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+$(document).on('mouseover', '.range-slider', function() {
+	$(document).foundation('slider', 'reflow');
+});
