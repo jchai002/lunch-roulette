@@ -10,10 +10,15 @@ body {
 
 .top-bar .name h1 a {
 	color: rgb(252, 221, 191);
-	@media only screen and (max-width: 40em) {
+}
+
+@media only screen and (max-width: 40em) {
+	.top-bar .name h1 a {
 		font-size: 1em;
 	}
-	@media only screen and (max-width: 40. 063em) {
+}
+@media only screen and (min-width: 40.063em) {
+	.top-bar .name h1 a {
 		font-size: 2em;
 	}
 }
