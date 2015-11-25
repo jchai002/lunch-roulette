@@ -10,6 +10,13 @@ body {
 
 .tab-bar section.left h1 a {
 	color: rgb(252, 221, 191);
+	padding-left: 1em;
+}
+
+.tab-bar .menu-icon span::after {
+	box-shadow: 0 0 0 1px rgb(252, 221, 191),
+	0 7px 0 1px rgb(252, 221, 191),
+	0 14px 0 1px rgb(252, 221, 191);
 }
 
 @media only screen and (max-width: 40em) {
@@ -21,11 +28,6 @@ body {
 	.tab-bar section.left h1 a {
 		font-size: 2em;
 	}
-}
-
-.top-bar-section ul li > a {
-	color: rgb(252, 221, 191);
-	font-size: 1.2em;
 }
 
 .left-off-canvas-menu {
