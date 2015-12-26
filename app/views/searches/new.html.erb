@@ -21,14 +21,23 @@
 				<h3>Max Distance:</h3>
 			</div>
 
+	<div class="show-for-medium-up">
 			<div class="small-4 columns">
 				<input type="text" id="radius" name="search[radius]" value="1" readonly />
 			</div>
+	</div>
+
 		</div>
-		<div class="range-slider radius" data-slider="3"
-			data-options="display_selector: #radius; start: 1; end: 30; step: 1;">
-			<span class="range-slider-handle" role="slider" tabindex="0"></span>
-			<span class="range-slider-active-segment"></span>
+		<div class="show-for-medium-up">
+			<div class="range-slider radius" data-slider="3"
+				data-options="display_selector: #radius; start: 1; end: 30; step: 1;">
+				<span class="range-slider-handle" role="slider" tabindex="0"></span>
+				<span class="range-slider-active-segment"></span>
+			</div>
+		</div>
+
+		<div class="show-for-small-only">
+			<input name="search[radius]" placeholder="enter distance">
 		</div>
 	</div>
 	<div class="small-12 large-5 columns">
